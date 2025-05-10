@@ -1,17 +1,20 @@
 #include<stdio.h>
 void Display(int iNo)
 {
-    int iCnt = 0;
-    while(iCnt <= iNo)
+    if(iNo < 10)
     {
-        printf("*\n");
-        iCnt++;
+        printf("Hello");
     }
+    else
+    {
+        printf("Demo");
+    }
+    
 }
 int main()
 {
     int iValue = 0;
-    printf("Enter a number");
+    printf("Enter a Number");
     scanf("%d",&iValue);
     Display(iValue);
     return 0;

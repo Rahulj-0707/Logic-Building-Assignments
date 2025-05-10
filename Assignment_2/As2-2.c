@@ -2,10 +2,10 @@
 void Display(int iNo)
 {
     int iCnt = 0;
-    while(iCnt <= iNo)
+    while(iNo >= iCnt)
     {
         printf("*\n");
-        iCnt++;
+        iNo--;
     }
 }
 int main()
@@ -16,3 +16,4 @@ int main()
     Display(iValue);
     return 0;
 }
+
